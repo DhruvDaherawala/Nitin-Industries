@@ -133,6 +133,10 @@ export default function NitinIndustriesWebsite() {
     ],
   }
 
+const visitIndiaMART = () => {
+  window.open('https://www.indiamart.com/nitinindustriessurat/', '_blank');  
+};
+
   const productDetails = {
     "Roll to Roll Cold Lamination Machine": {
       specifications: "Customizable width, High-speed operation, Roll-to-roll processing",
@@ -491,7 +495,7 @@ export default function NitinIndustriesWebsite() {
 
           {/* "Checkout IndiaMART" button on right top */}
           <div className="absolute top-8 right-8">
-            <Button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full shadow-lg animate-pulse">
+            <Button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full shadow-lg animate-pulse" onClick={visitIndiaMART}>
               Checkout IndiaMART
             </Button>
           </div>
@@ -848,11 +852,7 @@ export default function NitinIndustriesWebsite() {
                           )}
                         </div>
 
-                        <div className="flex justify-center mt-2">
-                          <p className="text-xs text-gray-500 dark:text-gray-400">
-                            Hover to pause • Auto-scrolling stops when viewing details
-                          </p>
-                        </div>
+                        
                       </div>
                     </>
                   ) : (
@@ -1319,6 +1319,11 @@ export default function NitinIndustriesWebsite() {
                     Contact
                   </button>
                 </li>
+                <li>
+                  <button onClick={visitIndiaMART} className="hover:text-white">
+                    IndiaMART
+                  </button>
+                </li>
               </ul>
             </div>
 
@@ -1332,8 +1337,8 @@ export default function NitinIndustriesWebsite() {
           </div>
 
           <div className="border-t border-gray-800 dark:border-gray-700 mt-8 pt-8 text-center text-gray-400 dark:text-gray-500">
-            <p>&copy; 2024 Nitin Industries. All Rights Reserved.</p>
-            <p className="text-sm mt-2">Terms of Use | Developed and Managed by IndiaMART InterMESH Limited</p>
+            <p>&copy; 2025 Nitin Industries. All Rights Reserved.</p>
+            <p className="text-sm mt-2">Terms of Use | Developed and Managed by DD Webs</p>
           </div>
         </div>
       </footer>
